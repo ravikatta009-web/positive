@@ -20,8 +20,7 @@
     }
 
     header {
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(10px);
+      background: rgba(0, 0, 0, 0.4);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       padding: 20px 60px;
       display: flex;
@@ -59,8 +58,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 50px;
       padding: 20px;
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(12px);
+      background: rgba(0, 0, 0, 0.45);
       border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.25);
@@ -235,7 +233,6 @@
       object-fit: cover; /* Ensures video fills the screen without stretching */
     }
 
-    /* Optional: Add a dark overlay so text is easier to read */
     .video-background::after {
       content: "";
       position: absolute;
@@ -243,7 +240,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.55); /* Black overlay */
+      background: rgba(0, 0, 0, 0.2); /* Light transparent overlay for absolute clarity */
     }
 
     @media(max-width: 900px) {
