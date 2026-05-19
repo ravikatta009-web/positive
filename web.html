@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHADOW FACE SHOP</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0b1120, #172554, #111827);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 38px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .menu {
+      font-size: 32px;
+      cursor: pointer;
+    }
+
+    .banner {
+      text-align: center;
+      padding: 50px 20px 20px;
+    }
+
+    .banner h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .banner p {
+      font-size: 18px;
+      color: #cbd5e1;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 40px;
+    }
+
+    .product-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 20px;
+      padding: 20px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 14px;
+      margin-bottom: 15px;
+      background: #ddd;
+    }
+
+    .product-title {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 21px;
+      color: #38bdf8;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .stock {
+      color: #facc15;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: linear-gradient(90deg, #2563eb, #06b6d4);
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 30px;
+      background: rgba(255,255,255,0.06);
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SHADOW FACE SHOP</h1>
+    <div class="menu">☰</div>
+  </header>
+
+  <section class="banner">
+    <h2>Premium APK Store</h2>
+    <p>Best Quality • Fast Delivery • Trusted Service</p>
+  </section>
+
+  <section class="products">
+
+    <div class="product-card">
+      <img src="DRIP.png" alt="DRIP APK">
+      <div class="product-title">DRIP APK</div>
+      <div class="price">₹100 – ₹400</div>
+      <a href="DRIP CLIENT .HTML" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="FACEBOOK.png" alt="FACEBOOK LEVEL 8">
+      <div class="product-title">FACEBOOK LEVEL 8</div>
+      <div class="price">₹100</div>
+      <div class="stock">Out of Stock</div>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="HACCKER ROOT.png" alt="HAXXCKER PRO ROOT">
+      <div class="product-title">HAXXCKER PRO ROOT</div>
+      <div class="price">₹600 – ₹1550</div>
+      <a href="HAXXCKER PRO ROOT.HTML" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="HG CHEATS .png" alt="HG APK">
+      <div class="product-title">HG APK</div>
+      <div class="price">₹150 – ₹400</div>
+      <a href="HG CHEATS .html" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="PATO.png" alt="PATO TEAM ORANGE">
+      <div class="product-title">PATO TEAM ORANGE</div>
+      <div class="price">₹170 – ₹250</div>
+      <a href="pato .html" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="spofitiy.jfif" alt="SPOTIFY ROOT">
+      <div class="product-title">SPOTIFY ROOT</div>
+      <div class="price">₹400 – ₹1050</div>
+      <a href="SPOTIFY ROOT.HTML" class="btn">Add to Cart</a>
+    </div>
+
+  </section>
+
+
+<script>
+function showProduct() {
+  document.getElementById('shopPage').style.display = 'none';
+  document.getElementById('productPage').style.display = 'block';
+}
+</script>
+
+</body>
+<div class="video-background">
+  <video autoplay muted loop playsinline id="myVideo">
+    <source src="main video.mp4" type="video/mp4">
+  </video>
+</div>
+
+<style>
+  .video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100; /* Keeps it behind everything */
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  #myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover; /* Ensures video fills the screen without stretching */
+  }
+
+  /* Optional: Add a dark overlay so text is easier to read */
+  .video-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Black with 40% transparency */
+  }
+</style>
+</html>
+
+  <footer>
+    Copyright © 2026 SHADOW FACE SHOP
+  </footer>
+<div id="password-overlay" style="position:fixed; top:0; left:0; width:100%; height:100%; background:#1a1a1a; z-index:9999; display:flex; align-items:center; justify-content:center; font-family: sans-serif;">
+    <div style="background:#2196f3; padding:40px; border-radius:12px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); text-align:center; width:320px;">
+        <h2 style="color:white; margin-top:0;">Access Locked</h2>
+        <p style="color:#e3f2fd;">Enter password to continue</p>
+        
+        <input type="password" id="pass-input" placeholder="Password" style="width:100%; padding:12px; margin-top:20px; border:none; border-radius:5px; outline:none; box-sizing: border-box;">
+        
+        <div style="text-align:left; margin: 10px 0 20px 0; color: white; font-size: 14px;">
+            <input type="checkbox" id="show-pass" onclick="togglePassword()" style="cursor:pointer;">
+            <label for="show-pass" style="cursor:pointer; user-select: none;">Show Password</label>
+        </div>
+
+        <button onclick="checkPassword()" style="background:white; color:#2196f3; border:none; padding:12px 30px; font-weight:bold; border-radius:5px; cursor:pointer; width:100%;">Unlock</button>
+        
+        <p id="error-msg" style="color:#ffcdd2; font-size:14px; display:none; margin-top:15px;"></p>
+    </div>
+</div>
+
+<script>
+let attempts = 0; // Starts at 0
+
+function togglePassword() {
+    var x = document.getElementById("pass-input");
+    x.type = x.type === "password" ? "text" : "password";
+}
+
+function checkPassword() {
+    const password = document.getElementById("pass-input").value;
+    const errorDisplay = document.getElementById("error-msg");
+    
+    // 1. CHANGE YOUR PASSWORD HERE
+    if (password === "shadowface321") {
+        document.getElementById("password-overlay").style.display = "none";
+    } else {
+        attempts++; // Add 1 to the fail counter
+        
+        if (attempts >= 1) {
+            // 2. CHANGE TO YOUR TELEGRAM LINK
+            window.location.href = "https://t.me/SHADOWFACE001"; 
+        } else {
+            errorDisplay.style.display = "block";
+            errorDisplay.innerHTML = "Incorrect! Attempts left: " + (1 - attempts);
+        }
+    }
+}
+
+// Support Enter key
+document.getElementById("pass-input").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") { checkPassword(); }
+});
+</script>
+</script>
+</html>

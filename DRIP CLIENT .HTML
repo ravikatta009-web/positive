@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRIP APK - SHADOW FACE SHOP</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #111;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 38px;
+      font-weight: bold;
+    }
+
+    .nav {
+      display: flex;
+      gap: 30px;
+      font-size: 18px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #e90b0b;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      padding: 20px;
+    }
+
+    .product-image img {
+      width: 100%;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .breadcrumb {
+      color: #666;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    .category {
+      color: #2563eb;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .title {
+      font-size: 42px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 36px;
+      font-weight: bold;
+      color: #1e3a8a;
+      margin-bottom: 30px;
+    }
+
+    .label {
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: block;
+      font-size: 18px;
+    }
+
+    select {
+      width: 100%;
+      padding: 16px;
+      font-size: 18px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 30px;
+      background: white;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .cart-btn {
+      background: #60a5fa;
+      color: white;
+    }
+
+    .back-btn {
+      background: #111827;
+      color: white;
+    }
+
+    .features {
+      margin-top: 20px;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .features h3 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+      background: rgb(255, 255, 255);
+      border-top: 1px solid #ddd;
+      font-size: 18px;
+    }
+
+    @media(max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">SHADOW FACE SHOP</div>
+    <div class="nav">
+      <a href="#">Cart</a>
+      <a href="#">Checkout</a>
+      <a href="#">My Account</a>
+      <a href="#">Registration</a>
+      <a href="#">Shop</a>
+    </div>
+  </header>
+
+  <section class="container">
+
+    <div class="product-image">
+      <img src="DRIP.png" alt="DRIP APK">
+    </div>
+
+    <div class="product-details">
+      <div class="breadcrumb">Home / Products / DRIP APK</div>
+      <div class="category">Premium APK</div>
+
+      <div class="title">DRIP APK</div>
+      <div class="price">₹100.00 – ₹380.00</div>
+
+      <label class="label">Choose Plan:</label>
+      <select>
+        <option>1 DAY — ₹100</option>
+        <option>7 DAY — ₹200</option>
+        <option>10 DAY — ₹380</option>
+      </select>
+
+      <div class="buttons">
+       <!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Styling the "Text Box" container */
+  .back-container {
+    background-color: #e3f2fd; /* Light blue background */
+    border: 2px solid #2196f3;   /* Bold blue border */
+    border-radius: 8px;          /* Rounded corners */
+    padding: 20px;
+    display: inline-block;       /* Fits to the size of content */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .message-text {
+    color: #0d47a1;              /* Dark blue text */
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  /* Styling the actual button */
+  .blue-back-btn {
+    background-color: #2196f3;   /* Primary blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Hover effect for the button */
+  .blue-back-btn:hover {
+    background-color: #1976d2;   /* Darker blue when hovering */
+  }
+</style>
+</head>
+<body>
+
+  <div class="back-container">
+     <div class="message-text">Need to return to the previous page?</div>
+    <button class="blue-back-btn" onclick="history.back()">
+      &#8592; Go Back
+    </button>
+  </div>
+
+</body>
+</html>
+
+         <a href="https://t.me/SHADOWFACE001" target="_blank" class="btn cart-btn">Add To Cart</a>
+      </div>
+
+      <div class="features">
+        </ul>
+        <h3>Features</h3>
+          <li> Aim Assist</li>
+          <li>Aim Assistem</li>
+          <li>Legit Aimbot</li>
+          <li>Speed Timer</li>
+          <li>Aimbot AWM</li>
+          <li>Esp line and Box</li>
+        <li>USE 2ND ID </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    Copyright © 2026 SHADOW FACE SHOP
+  </footer>
+
+</body>
+</html>
+ 
+ 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHADOW FACE SHOP</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0b1120, #172554, #111827);
+      color: rgb(253, 6, 6);
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(2, 26, 240, 0.08);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(3, 96, 236, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 38px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .menu {
+      font-size: 32px;
+      cursor: pointer;
+    }
+
+    .banner {
+      text-align: center;
+      padding: 50px 20px 20px;
+    }
+
+    .banner h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .banner p {
+      font-size: 18px;
+      color: #fa0a82;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 40px;
+    }
+
+    .product-card {
+      background: rgba(93, 5, 194, 0.08);
+      border: 1px solid rgba(185, 233, 10, 0.12);
+      border-radius: 20px;
+      padding: 20px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(118, 219, 2, 0.774);
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 14px;
+      margin-bottom: 15px;
+      background: #ddd;
+    }
+
+    .product-title {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 21px;
+      color: #38bdf8;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .stock {
+      color: #facc15;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: linear-gradient(90deg, #2563eb, #06b6d4);
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 30px;
+      background: rgba(255,255,255,0.06);
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+<div class="video-background">
+  <video autoplay muted loop playsinline id="myVideo">
+    <source src="drip client.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+</div>
+
+<style>
+  .video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100; /* Keeps it behind everything */
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  #myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover; /* Ensures video fills the screen without stretching */
+  }
+
+  /* Optional: Add a dark overlay so text is easier to read */
+  .video-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Black with 40% transparency */
+  }
+</style>
